@@ -10,7 +10,7 @@ import org.spongepowered.asm.mixin.injection.Redirect;
 public interface DensityFunctionsMixin {
 
     @Redirect(method = "create", at = @At(value = "INVOKE", target = "Lorg/slf4j/Logger;warn(Ljava/lang/String;)V"))
-    private static void tcr$warn(Logger instance, String s) {
+    private static void noworldgenwarning$warn(Logger instance, String s) {
 
     }
 
